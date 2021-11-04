@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Media</title>
+    <script src="assets/js/canvas.js"></script>
     <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/canvas.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Canvas</title>
+    <script>
+        window.onload = function() {
+            canvas('#draw', {
+                width: 500,
+                height: 300,
+                strokeWidth: 3,
+                strokeColor: "#df4b26"
+            })
+        };
+    </script>
 </head>
 <body>
 <header class="header"><p>Header!
@@ -11,20 +24,11 @@
 <div class="container">
     <main class="center column">
         <article>
-<h1> Media </h1>
-
-<audio controls>
-    <source src="public/audios/AJR FEAT. LOUISA JOHNSON - Weak (Stay Strong Mix).mp3">
-</audio>
-<br>
-<video height="720" width="1280" controls>
-    <source src="public/videos/Snail's House - Hot Milk.mp4" autoplay="autoplay" height>
-</video>
-<br>
-<p>
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/FUzs2oMEs8w" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+            <h1>Canvas</h1>
+            <canvas id="draw"></canvas>
+            <div class="toolbar" id="toolbar">
+                
+            </div>
         </article>
     </main>
     <nav class="left column">
